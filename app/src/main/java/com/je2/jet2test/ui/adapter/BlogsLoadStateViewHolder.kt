@@ -27,7 +27,7 @@ class BlogsLoadStateViewHolder(
 
     companion object {
         fun create(parent: ViewGroup, retry: () -> Unit): BlogsLoadStateViewHolder {
-            val binding = ItemLoadStateFooterViewBinding.inflate(LayoutInflater.from(parent.context))
+            val binding = ItemLoadStateFooterViewBinding.inflate(LayoutInflater.from(parent.context), parent, false)
             return BlogsLoadStateViewHolder(binding, retry)
         }
     }

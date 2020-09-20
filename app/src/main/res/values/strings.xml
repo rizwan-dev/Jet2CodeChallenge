@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Jet2Test</string>
+    <string name="likes">%d Likes</string>
+    <string name="comments">%d Comments</string>
 </resources>

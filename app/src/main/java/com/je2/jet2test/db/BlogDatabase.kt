@@ -33,7 +33,7 @@ abstract class BlogDatabase : RoomDatabase() {
 
         private fun buildDatabase(context: Context) =
                 Room.databaseBuilder(context.applicationContext,
-                        BlogDatabase::class.java, "Github.db")
+                        BlogDatabase::class.java, "Blogs.db")
                         .build()
     }
 }

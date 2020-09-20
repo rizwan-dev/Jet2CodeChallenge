@@ -1,6 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        style="@style/boldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_user"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="User Name" />
+
+    <TextView
+        android:id="@+id/tv_designation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="User Designation"
+        style="@style/normalText"
+        app:layout_constraintStart_toStartOf="@+id/tv_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="1 min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_marginHorizontal="16dp"
+        android:id="@+id/iv_article"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_designation"
+        tools:srcCompat="@drawable/h1" />
+
+    <TextView
+        android:id="@+id/tv_article_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/normalText"
+        tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        app:layout_constraintEnd_toEndOf="@id/iv_article"
+        app:layout_constraintStart_toStartOf="@id/iv_article"
+        app:layout_constraintTop_toBottomOf="@+id/iv_article" />
+
+    <TextView
+        android:id="@+id/tv_article_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        tools:text="Article Title"
+        style="@style/normalText"
+        app:layout_constraintEnd_toEndOf="@+id/tv_article_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_article_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_article_content" />
+
+    <TextView
+        android:id="@+id/tv_article_url"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:text="Article Title"
+        style="@style/normalText"
+        app:layout_constraintEnd_toEndOf="@+id/tv_article_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_article_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_article_title" />
+
+    <TextView
+    android:id="@+id/tv_article_like"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    tools:text="32 Likes"
+    style="@style/boldText"
+    app:layout_constraintStart_toStartOf="@+id/tv_article_content"
+    app:layout_constraintTop_toBottomOf="@+id/tv_article_url" />
+    <TextView
+        android:id="@+id/tv_article_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:text="30 Comments"
+        style="@style/boldText"
+        app:layout_constraintEnd_toEndOf="@+id/tv_article_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_article_url" />
 </androidx.constraintlayout.widget.ConstraintLayout>
